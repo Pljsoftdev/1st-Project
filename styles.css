@@ -8,8 +8,8 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: #949499;
+  color: rgb(255, 255, 255);
+  background: #000003;
 }
 /* Link Styles */
 
@@ -110,7 +110,6 @@ header .profile-image:hover {
 .axe {
   margin: 30px;
   padding: 10px 40px 40px;
-  max-width: ;
   text-align: left;
   background: rgb(255, 255, 255);
   border: solid rgb(117, 117, 117);
@@ -127,7 +126,6 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 10px 40px 40px;
-  max-width: ;
   text-align: left;
   background: rgb(255, 255, 255);
   border: solid rgb(117, 117, 117);
@@ -143,10 +141,8 @@ header .profile-image:hover {
 ul.facts ul.skills ul.free {
   margin-top: 0px;
   padding: 20px 40px 40px;
-  max-width: ;
   text-align: left;
   background: #fff;
-  list-style: ;
   border-radius: 6px;
   transition: all .5s;
 }
@@ -233,7 +229,7 @@ a.social:hover {
 }
 
 button:hover {
-scale: 1.1;
+transform: scale(1.1);
 }
 
 p.spend {
@@ -253,9 +249,11 @@ a.edge {
   font-size: large;
   font-weight: bold;
 }
+a.edge:hover {;
+color: blueviolet;
+}
 
 a.last {
-  
   border: #fff;
   margin: 15px;
   padding: 5px;
@@ -263,14 +261,17 @@ a.last {
   font-size: large;
   font-weight: bold;
 }
+
+a.last:hover {
+  color: blueviolet;
+  }
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
+  .flex {      /* TWEENER - IE 10 */
       display: flex; 
       max-width: 1200px;
-      -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
   }
